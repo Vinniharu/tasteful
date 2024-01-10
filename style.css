@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap");
+
+:root {
+  --maincolor: rgb(243, 213, 130);
+  --highlights: rgb(114, 105, 78);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto";
+  color: white;
+}
+
+/* Nav bar section */
+
+nav {
+  position: sticky;
+  top: 0;
+  padding: 0.4rem 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--highlights);
+}
+
+#mainCover {
+  background-color: rgba(0, 0, 0, 0.4);
+  /* height: 100vh; */
+  max-height: fit-content;
+}
+
+#nav_head a {
+  color: white;
+  font-size: 2.4rem;
+  letter-spacing: 3px;
+}
+
+#book {
+  color: white;
+  font-size: 0.8rem;
+  background-color: black;
+  padding: 0.8rem 1.6rem;
+  border-radius: 3rem;
+  border: 2px solid var(--maincolor);
+  transition: 0.2s ease-in-out;
+}
+
+#book:hover {
+  color: white;
+  background-color: var(--maincolor);
+}
+
+/* header area */
+
+header {
+  background-image: url("images/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: fit-content;
+}
+
+#main, #aboutCover{
+  background-color: rgba(0, 0, 0, 0.4);
+  max-height: fit-content;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 6rem;
+  gap: 3rem;
+}
+
+#main{
+  height: 80vh;
+}
+
+span {
+  color: var(--maincolor);
+  font-family: "Pacifico";
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+#mainWord ,#mainBtn, #aboutWord, #aboutImg{
+  flex: 1;
+  max-width: 40rem;
+}
+
+#mainWord h1 {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+#mainWord p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+#cta {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#mainBtn,
+#playBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playBtn {
+  cursor: pointer;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--maincolor);
+  font-size: 4rem;
+  transition: 0.2s ease-in;
+}
+
+#playBtn:hover {
+  border: 2px solid var(--maincolor);
+  color: var(--maincolor);
+  background-color: transparent;
+}
+
+/* about section of the page */
+
+#about{
+  background-image: url(images/about-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: fit-content;
+}
+
+#aboutWord h1{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#aboutWord p{
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+  font-style: italic;
+}
+
+#aboutWord li{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+#aboutWord li p{
+  margin-bottom: 0;
+  font-style: normal;
+}
+
+#aboutWord ul{
+  margin-bottom: 2rem;
+}
+
+#aboutWord h3{
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+#aboutImg{
+  border-top-right-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  border: 2px solid var(--maincolor);
+  height: auto;
+  max-width: 40rem;
+}
+
+#aboutImg img{
+  width: 100%;
+  max-width: 40rem;
+}
+
+@media all and (max-width: 800px) {
+  #nav_head a {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+
+  #main, #aboutCover {
+    padding: 1.8rem;
+  }
+
+  #mainWord h1{
+    font-size: 2.6rem;
+  }
+
+  #mainWord p{
+    font-size: 1rem;
+  }
+
+  #book {
+    font-size: 0.6rem;
+    padding: 0.4rem 1rem;
+  }
+
+  nav #book{
+    display: none;
+  }
+
+  #playBtn {
+    font-size: 1.8rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #aboutWord, #aboutImg{
+    flex: none;
+    width: fit-content;
+  }
+
+  #aboutCover{
+    padding: 1rem;
+    flex-direction: row;
+  }
+
+  #aboutWord h1{
+    font-size: 1.2rem;
+  }
+
+  #aboutWord p, #aboutWord h3, #aboutWord li{
+    font-size: 1rem;
+  }
+}
