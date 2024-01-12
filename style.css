@@ -447,7 +447,7 @@ footer{
   margin-bottom: 1rem;
 }
 
-#socials, #socials div{
+#socials, #socials div a{
   display: flex;
   align-items: center;
   justify-content: start;
@@ -477,7 +477,7 @@ footer{
   color: var(--maincolor);
 }
 
-#socials div{
+#socials div a{
   justify-content: center !important;
   font-size: 2rem;
   width: 3rem;
