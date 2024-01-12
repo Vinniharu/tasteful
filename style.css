@@ -84,7 +84,7 @@ header {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 4rem !important;
-  height: 80vh;
+  height: 100vh;
 }
 
 span {
@@ -643,6 +643,8 @@ footer{
 
   footer{
     padding: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--highlights);
   }
 
   #copy {
