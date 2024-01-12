@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Tasteful</title>
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -16,7 +17,8 @@
             <a href="" id="book">Book a table</a>
          </nav>
          <div id="main">
-            <div id="mainWord">
+            <div id="mainWord" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
                <h1>Welcome to <span>Tasteful</span></h1>
                <p>
                   Indulge your senses in an unforgettable culinary journey at <span>Tasteful</span>. We invite you to
@@ -28,7 +30,8 @@
                   <a href="" id="book">Book a table</a>
                </div>
             </div>
-            <div id="mainBtn">
+            <div id="mainBtn" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
                <div id="playBtn">
                   <ion-icon name="play"></ion-icon>
                </div>
@@ -39,25 +42,29 @@
 
    <div id="about">
       <div id="aboutCover">
-         <div id="aboutWord">
+         <div id="aboutWord" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
             <h1>Indulge in a symphony of flavors that captivate the senses and elevate your dining experience to new
                heights</h1>
             <p>At <span>Tasteful</span>, we take pride in creating dishes that are not only delectable but also crafted
                with precision and passion.</p>
             <ul>
-               <li>
+               <li data-aos="fade-right" data-aos-delay="0" data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
                   <div class="icon">
                      <ion-icon name="checkmark-done"></ion-icon>
                   </div>
                   <p>Elegant Ambiance and Atmosphere</p>
                </li>
-               <li>
+               <li data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
                   <div class="icon">
                      <ion-icon name="checkmark-done"></ion-icon>
                   </div>
                   <p>Exceptional Culinary Experience</p>
                </li>
-               <li>
+               <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
                   <div class="icon">
                      <ion-icon name="checkmark-done"></ion-icon>
                   </div>
@@ -78,7 +85,8 @@
       </div>
    </div>
    <div id="menu">
-      <div id="menu_holder">
+      <div id="menu_holder" data-aos="fade-right"  data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
          <h1 id="menu_head"><span>Gallery</span></h1>
          <p>Here is glimpse of our tasty menu</p>
          <div id="menu_img">
@@ -112,33 +120,41 @@
          <form>
             <fieldset id="reserver">
                <label for="name">
-                  <input type="text" name="name" placeholder="Your Name">
+                  <input type="text" name="name" placeholder="Your Name" data-aos="fade-right"  data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
                </label>
                <label for="email">
-                  <input type="text" name="email" placeholder="Your Email">
+                  <input type="text" name="email" placeholder="Your Email" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
                </label>
                <label for="phone">
-                  <input type="text" name="phone" placeholder="Your Number">
+                  <input type="text" name="phone" placeholder="Your Number" data-aos="fade-right" data-aos-delay="200"  data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
                </label>
                <label for="date">
-                  <input type="text" name="date" placeholder="Date">
+                  <input type="text" name="date" placeholder="Date" data-aos="fade-right" data-aos-delay="300"  data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
                </label>
                <label for="time">
-                  <input type="text" name="time" placeholder="Time">
+                  <input type="text" name="time" placeholder="Time" data-aos="fade-right" data-aos-delay="400"  data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
                </label>
                <label for="people">
-                  <input type="number" name="people" placeholder="No. of people">
+                  <input type="number" name="people" placeholder="No. of people" data-aos="fade-right" data-aos-delay="500"  data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
                </label>
             </fieldset>
             <fieldset id="message">
-               <textarea name="message" id="reserveMessage" placeholder="Message (Optional)"></textarea>
+               <textarea name="message" id="reserveMessage" placeholder="Message (Optional)" data-aos="fade-right"  data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true"></textarea>
             </fieldset>
             <button id="book">Book a table</button>
          </form>
       </div>
    </div>
    <div id="contact">
-      <div id="contactHolder">
+      <div id="contactHolder"data-aos="fade-in"  data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
          <div id="contactDetail">
             <div class="cd">
                <div class="cdIcon"><ion-icon name="location"></ion-icon></div>
@@ -173,7 +189,8 @@
             </div>
          </div>
          <div id="contactReachout">
-            <form>
+            <form data-aos="fade-down"  data-aos-duration="1000"
+               data-aos-easing="ease-in-out" data-aos-once="true">
                <fieldset>
                   <label for="name">
                      <input type="text" name="name" placeholder="Your Name">
@@ -247,6 +264,10 @@
    </a>
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
 </body>
 
 </html>
