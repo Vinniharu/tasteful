@@ -16,6 +16,18 @@
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+  background-image: url(images/header-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* Nav bar section */
 
 nav {
@@ -32,7 +44,6 @@ nav {
 
 #mainCover {
   background-color: rgba(0, 0, 0, 0.4);
-  /* height: 100vh; */
   max-height: fit-content;
 }
 
@@ -66,19 +77,12 @@ header {
   height: fit-content;
 }
 
-#main, #aboutCover{
-  background-color: rgba(0, 0, 0, 0.4);
-  max-height: fit-content;
-  height: 100vh;
+#main {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  padding: 2rem 6rem;
-  gap: 3rem;
-}
-
-#main{
+  gap: 2rem;
   height: 80vh;
 }
 
@@ -89,7 +93,8 @@ span {
   font-weight: 600;
 }
 
-#mainWord ,#mainBtn, #aboutWord, #aboutImg{
+#mainWord,
+#mainBtn {
   flex: 1;
   max-width: 40rem;
 }
@@ -137,47 +142,67 @@ span {
 
 /* about section of the page */
 
-#about{
+#about {
   background-image: url(images/about-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: fit-content;
+  min-height: 100vh;
+  max-width: 100% !important;
+  border-bottom: 2px solid var(--highlights);
+  justify-content: center !important;
 }
 
-#aboutWord h1{
+#about,
+#aboutCover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 30rem;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+#aboutWord,
+#aboutImg {
+  flex: 1;
+  max-width: 40rem;
+}
+
+#aboutWord h1 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
-#aboutWord p{
+#aboutWord p {
   font-size: 1.4rem;
   margin-bottom: 1.4rem;
   font-style: italic;
 }
 
-#aboutWord li{
+#aboutWord li {
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 1rem;
 }
 
-#aboutWord li p{
+#aboutWord li p {
   margin-bottom: 0;
   font-style: normal;
 }
 
-#aboutWord ul{
+#aboutWord ul {
   margin-bottom: 2rem;
 }
 
-#aboutWord h3{
+#aboutWord h3 {
   font-weight: 100;
   font-size: 1.3rem;
 }
 
-#aboutImg{
+#aboutImg {
   border-top-right-radius: 4rem;
   border-bottom-left-radius: 4rem;
   border: 2px solid var(--maincolor);
@@ -185,9 +210,241 @@ span {
   max-width: 40rem;
 }
 
-#aboutImg img{
+#aboutImg img {
   width: 100%;
   max-width: 40rem;
+}
+
+/* Menu section */
+
+#menu {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: fit-content;
+  border-bottom: 2px solid var(--highlights);
+}
+
+#menu_holder {
+  max-width: 80rem;
+  text-align: start;
+  padding: 1rem 2rem;
+  max-height: fit-content;
+}
+
+#menu_holder h1 {
+  font-size: 10vh;
+  margin-bottom: 1rem;
+}
+
+#menu_holder p {
+  font-size: 1.4rem;
+}
+
+#menu_img {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 2rem;
+}
+
+#menu_img img {
+  width: 100%;
+  height: auto;
+}
+
+#menu_img div {
+  max-width: 34rem;
+  max-height: 22rem;
+  overflow: hidden;
+  border: 2px solid var(--highlights);
+}
+
+#menucorner1,
+#menucorner2 {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  border: none !important;
+}
+
+#menucorner1 {
+  border-top: 4px solid var(--maincolor) !important;
+  border-left: 4px solid var(--maincolor) !important;
+  top: 0;
+  left: 0;
+}
+
+#menucorner2 {
+  border-bottom: 4px solid var(--maincolor) !important;
+  border-right: 4px solid var(--maincolor) !important;
+  bottom: 0;
+  right: 0;
+}
+
+/* reservation section */
+
+#reserve,
+#contact {
+  background-color: black;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  min-height: 100vh;
+  border-bottom: 2px solid var(--highlights);
+}
+
+#reserveHolder,
+#reserveHolder form,
+#reserver,
+#contactHolder,
+#aboutCover {
+  max-width: 70rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+#reserveHolder,
+#reserveHolder form {
+  flex-direction: column;
+}
+
+#reserveHolder form {
+  gap: 2rem 1rem;
+}
+
+#reserveHolder p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#reserveHolder h1 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+#reserver {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem 1rem;
+}
+
+#reserver input,
+#message textarea {
+  background-color: transparent;
+  border: 1px solid var(--highlights);
+  font-size: 1rem;
+  padding: 1rem;
+  width: 30rem;
+}
+
+#reserver input::placeholder,
+#message textarea::placeholder,
+#contactReachout form input::placeholder,
+#contactReachout form textarea::placeholder {
+  color: var(--highlights);
+}
+
+#reserver input:focus-visible,
+#message textarea:focus-visible,
+#contactReachout form input:focus-visible,
+#contactReachout form textarea:focus-visible {
+  border: 1px solid var(--maincolor);
+}
+
+#message textarea {
+  min-height: 10rem;
+}
+
+#contactHolder,
+#contactReachout form fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  max-width: 70rem;
+}
+
+#contactReachout form input,
+#contactReachout form textarea {
+  background-color: transparent;
+  border: 1px solid var(--highlights);
+  font-size: 1rem;
+  padding: 1rem;
+  width: 20rem;
+}
+
+.cd,
+.cdIcon {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.cdIcon {
+  font-size: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--highlights);
+  color: white;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.cd div {
+  margin-bottom: 2rem;
+}
+
+.cd div h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#contactHolder {
+  align-items: start;
+  gap: 2rem;
+}
+
+#contactReachout form textarea {
+  min-height: 10rem;
+  width: 100%;
+}
+
+/* footer section */
+
+#copy {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 2rem;
+}
+
+/* to the top button */
+#toTheTop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  background-color: var(--maincolor);
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
 }
 
 @media all and (max-width: 800px) {
@@ -196,15 +453,22 @@ span {
     letter-spacing: 3px;
   }
 
-  #main, #aboutCover {
+  #main,
+  #aboutCover {
     padding: 1.8rem;
   }
 
-  #mainWord h1{
+  #mainWord h1,
+  #menu_holder h11 {
     font-size: 2.6rem;
   }
 
-  #mainWord p{
+  #mainWord {
+    flex: none;
+    width: 100%;
+  }
+
+  #mainWord p {
     font-size: 1rem;
   }
 
@@ -213,7 +477,7 @@ span {
     padding: 0.4rem 1rem;
   }
 
-  nav #book{
+  nav #book {
     display: none;
   }
 
@@ -223,21 +487,56 @@ span {
     height: 3rem;
   }
 
-  #aboutWord, #aboutImg{
+  #aboutWord,
+  #aboutImg {
     flex: none;
     width: fit-content;
   }
 
-  #aboutCover{
+  #aboutCover {
     padding: 1rem;
     flex-direction: row;
   }
 
-  #aboutWord h1{
-    font-size: 1.2rem;
+  #aboutWord h1,
+  #menu_holder h1 {
+    font-size: 1.4rem;
   }
 
-  #aboutWord p, #aboutWord h3, #aboutWord li{
+  #aboutWord p,
+  #aboutWord h3,
+  #aboutWord li,
+  #menu_holder p {
     font-size: 1rem;
+  }
+
+  #reserver input,
+  #message textarea,
+  #contactReachout form input,
+  #contactReachout form textarea {
+    width: 100%;
+  }
+
+  .cdIcon {
+    font-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--highlights);
+    color: white;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .cd div {
+    margin-bottom: 2rem;
+  }
+
+  .cd div h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  #copy {
+    display: none;
   }
 }

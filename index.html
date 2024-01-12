@@ -76,10 +76,172 @@
       </div>
    </div>
    <div id="menu">
-      <h1 id="menu_head">Menu</h1>
-      <p>Here is our tasty menu</p>
+      <div id="menu_holder">
+         <h1 id="menu_head"><span>Gallery</span></h1>
+         <p>Here is glimpse of our tasty menu</p>
+         <div id="menu_img">
+            <div>
+               <img src="images/food1.webp" alt="food1">
+            </div>
+            <div>
+               <img src="images/food2.jpeg" alt="food2">
+            </div>
+            <div>
+               <img src="images/food3.jpeg" alt="food3">
+            </div>
+            <div>
+               <img src="images/food4.jpeg" alt="food4">
+            </div>
+            <div>
+               <img src="images/food5.jpeg" alt="food5">
+            </div>
+            <div>
+               <img src="images/food6.jpeg" alt="food6">
+            </div>
+            <div id="menucorner1"></div>
+            <div id="menucorner2"></div>
+         </div>
+      </div>
    </div>
+   <div id="reserve">
+      <div id="reserveHolder">
+         <p>Reservation</p>
+         <h1><span>Book a table</span></h1>
+         <form>
+            <fieldset id="reserver">
+               <label for="name">
+                  <input type="text" name="name" placeholder="Your Name">
+               </label>
+               <label for="email">
+                  <input type="text" name="email" placeholder="Your Email">
+               </label>
+               <label for="phone">
+                  <input type="text" name="phone" placeholder="Your Number">
+               </label>
+               <label for="date">
+                  <input type="text" name="date" placeholder="Date">
+               </label>
+               <label for="time">
+                  <input type="text" name="time" placeholder="Time">
+               </label>
+               <label for="people">
+                  <input type="number" name="people" placeholder="No. of people">
+               </label>
+            </fieldset>
+            <fieldset id="message">
+               <textarea name="message" id="reserveMessage" placeholder="Message (Optional)" ></textarea>
+            </fieldset>
+            <button id="book">Book a table</button>
+         </form>
+      </div>
+   </div>
+   <div id="contact">
+      <div id="contactHolder">
+         <div id="contactDetail">
+            <div class="cd">
+               <div class="cdIcon"><ion-icon name="location"></ion-icon></div>
+               <div>
+                  <h1>Location:</h1>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+               </div>
+            </div>
+            <div class="cd">
+               <div class="cdIcon"><ion-icon name="time"></ion-icon></div>
+               <div>
+                  <h1>Open Hours:</h1>
+                  <p>
+                     Monday-Saturday:
+                     11:00 AM - 2300 PM
+                  </p>
+               </div>
+            </div>
+            <div class="cd">
+               <div class="cdIcon"><ion-icon name="mail"></ion-icon></div>
+               <div>
+                  <h1>Email:</h1>
+                  <p>Tasteful@gmail.com</p>
+               </div>
+            </div>
+            <div class="cd">
+               <div class="cdIcon"><ion-icon name="call"></ion-icon></div>
+               <div>
+                  <h1>Call:</h1>
+                  <p>+234 56 7789 0198</p>
+               </div>
+            </div>
+         </div>
+         <div id="contactReachout">
+            <form>
+               <fieldset>
+                  <label for="name">
+                     <input type="text" name="name" placeholder="Your Name">
+                  </label>
+                  <label for="email">
+                     <input type="text" name="email" placeholder="Your Email">
+                  </label>
+               </fieldset>
+               <fieldset>
+                  <label for="subject">
+                     <input type="text" name="subject" placeholder="Subject">
+                  </label>
+               </fieldset>
+               <fieldset>
+                  <textarea name="message" placeholder="Message (Optional)"></textarea>
+               </fieldset>
+               <button id="book">Book a table</button>
+            </form>
+         </div>
+      </div>
+   </div>
+   <footer>
+      <div id="footer">
+         <div id="footDetail">
+            <h1><span>Tasteful</span></h1>
+            <p>
+               A108 Adam Street <br>
+               NY 535022, USA
+            </p>
+            <p>
+               Phone: +1 5589 55488 55 <br>
+               Email: info@example.com
+            </p>
+            <div id="socials">
+               <div><ion-icon name="logo-twitter"></ion-icon></div>
+               <div><ion-icon name="logo-facebook"></ion-icon></div>
+               <div><ion-icon name="logo-instagram"></ion-icon></div>
+               <div><ion-icon name="logo-skype"></ion-icon></div>
+               <div><ion-icon name="logo-linkedin"></ion-icon></div>
+            </div>
+         </div>
+         <div id="footLink">
+            <p>Links</p>
+            <ul>
+               <li><a href="">Home</a></li>
+            </ul>
+            <ul>
+               <li><a href="">About Us</a></li>
+            </ul>
+            <ul>
+               <li><a href="">Services</a></li>
+            </ul>
+            <ul>
+               <li><a href="">Terms of services</a></li>
+            </ul>
+            <ul>
+               <li><a href="">Privacy policy</a></li>
+            </ul>
+         </div>
+         <div id="footNews">
+            
+         </div>
+      </div>
+      
+      <h1 id="copy">Copyright <strong>Tasteful</strong>. All Rights Reserved.</h1>
+   </footer>
 
+   <a href="#mainCover" id="toTheTop">
+      <ion-icon name="arrow-up"></ion-icon>
+   </a>
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
