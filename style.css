@@ -519,6 +519,7 @@ footer{
   background-color: var(--maincolor);
   height: 3rem;
   width: 6rem;
+  cursor: pointer;
   transition: .4s ease-in-out;
 }
 
