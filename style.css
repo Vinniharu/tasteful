@@ -305,7 +305,7 @@ span {
 #reserveHolder form,
 #reserver,
 #contactHolder,
-#aboutCover {
+#aboutCover, #footer {
   max-width: 70rem;
   display: flex;
   align-items: start;
@@ -424,6 +424,109 @@ span {
 
 /* footer section */
 
+footer{
+  min-height: 20vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+#footer{
+  flex-wrap: wrap;
+  gap: 2rem 3rem;
+  max-width: 100%;
+}
+
+#footDetail h1{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#footDetail p{
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#socials, #socials div{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#footLink p{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#footLink ul{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+#footLink li a{
+  font-size: 1.4rem;
+  transition: .4rem ease-in-out;
+}
+
+#footLink li a:hover{
+  color: var(--maincolor);
+}
+
+#socials div{
+  justify-content: center !important;
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: var(--maincolor);
+  background-color: gray;
+}
+
+#footNews h1{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#footNews p{
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+#newsInput{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  background-color: white;
+  max-width: 30rem;
+  border: 2px solid var(--maincolor);
+}
+
+#newsInput input{
+  padding: 1rem;
+  background: transparent;
+  max-width: 10rem;
+  color: black;
+}
+
+#newsInput button{
+  border-radius: 10rem;
+  background-color: var(--maincolor);
+  height: 3rem;
+  width: 6rem;
+  transition: .4s ease-in-out;
+}
+
+#newsInput button:hover{
+  color: black;
+  background-color: white;
+  border: 2px solid var(--maincolor);
+}
+
 #copy {
   text-align: center;
   font-size: 1rem;
@@ -536,7 +639,17 @@ span {
     margin-bottom: 1rem;
   }
 
+  footer{
+    padding: 1rem;
+  }
+
   #copy {
     display: none;
+  }
+
+  #toTheTop{
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.8rem;
   }
 }
