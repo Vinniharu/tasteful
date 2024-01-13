@@ -45,6 +45,8 @@ nav {
 #mainCover {
   background-color: rgba(0, 0, 0, 0.4);
   max-height: fit-content;
+  min-height: 100vh;
+  border-bottom: 2px solid var(--highlights);
 }
 
 #nav_head a {
@@ -74,7 +76,6 @@ header {
   background-image: url("images/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: fit-content;
 }
 
 #main {
@@ -84,7 +85,6 @@ header {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 4rem !important;
-  height: 100vh;
 }
 
 span {
@@ -383,7 +383,7 @@ span {
   border: 1px solid var(--highlights);
   font-size: 1rem;
   padding: 1rem;
-  width: 20rem;
+  width: 30rem;
 }
 
 .cd,
@@ -619,7 +619,8 @@ footer{
   #message textarea,
   #contactReachout form input,
   #contactReachout form textarea {
-    width: 100%;
+    max-width: 30rem;
+    width: 15rem;
   }
 
   .cdIcon {
